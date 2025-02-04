@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    gap: 20px;
+}
+
+body::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.08;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.2509803922), rgba(255, 255, 255, 0) 40%), radial-gradient(hsl(44, 100%, 66%) 30%, hsl(338, 68%, 65%), hsla(338, 68%, 65%, 0.4) 41%, transparent 52%), radial-gradient(hsl(272, 100%, 60%) 37%, transparent 46%), linear-gradient(155deg, transparent 65%, hsl(142, 70%, 49%) 95%), linear-gradient(45deg, #0065e0, #0f8bff);
+    background-size: 200% 200%, 285% 500%, 285% 500%, cover, cover;
+    background-position: bottom left, 109% 68%, 109% 68%, center, center;
+}
+
+.container {
+    background: #fff;
+    width: 1400px;
+    min-height: 500px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.container:first-child {
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.container::before {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 35px;
+    background: #dd2476;
+    top: 0;
+    right: 0;
+    border-bottom-left-radius: 20px;
+}
+
+.container-custom::after,
+.container::after {
+    position: absolute;
+    top: 9px;
+    right: 30px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.container::after {
+    content: "Java";
+}
+
+.container-custom::after {
+    content: "React";
+}
+
+.app-heading {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.column {
+    padding: 30px;
+    flex: 0 0 auto;
+    width: 33.3333333333%;
+}
+
+.app-title {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 20px;
+    background: #cccccc31;
+    padding: 5px 0 5px 15px;
+    border-left: 5px solid #dd2476;
+}
+
+.app-branch {
+    padding-left: 30px;
+    margin-bottom: 5px;
+}
+
+.app-link {
+    display: inline-block;
+    color: blue;
+    padding-left: 60px;
+    margin-bottom: 6px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
