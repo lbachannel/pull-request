@@ -47,7 +47,7 @@
 /* small breakpoint */
 @media (max-width: 575.98px) {
     .container {
-        width: 430px;
+        width: 350px;
     }
 
     .app-branch {
@@ -55,7 +55,20 @@
     }
     
     .app-link {
-        padding-left: 30px;
+        padding-left: 20px;
+        font-size: 13px;
+    }
+
+    .container::before {
+        width: 80px;
+        height: 30px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .container-custom::after,
+    .container::after {
+        top: 6px;
+        right: 18px;
     }
 }
 
