@@ -47,7 +47,7 @@
 /* small breakpoint */
 @media (max-width: 575.98px) {
     .container {
-        width: 350px;
+        width: 340px;
     }
 
     .app-branch {
